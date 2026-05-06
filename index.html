@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandhan Hardiya - Portfolio</title>
+    <meta name="description" content="Portfolio of Bandhan Hardiya, an aspiring Data Analyst and Software Developer.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">BH.</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    <main class="hero-section">
+        <div class="hero-content">
+            <p class="greeting">Hi, I'm</p>
+            <h1>Bandhan Hardiya</h1>
+            <p class="role"><span id="typed-role">Software Developer</span><span class="typed-cursor"></span></p>
+            <p class="bio">Data Analytics Enthusiast | Certified by Google & IBM | Skilled in SQL, Python, Power BI,
+                Tableau, Excel | Project Work: Sales Insights & Data Warehousing</p>
+            <p class="bio fact-box" id="fact-container">
+                <strong>*Eukaryote:</strong> A "sciencey" name for a complex, multi-cellular organism (like us!). Because I love biology and it is my passion to learn about it.
+            </p>
+            <div class="cta-buttons">
+                <a href="work.html" class="btn primary-btn">View My Work</a>
+                <a href="contact.html" class="btn secondary-btn">Get In Touch</a>
+                <a href="assets/resume.pdf" class="btn secondary-btn" download>Download CV</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/profile1.jpeg" alt="Bandhan Hardiya Avatar">
+        </div>
+    </main>
+
+    <!-- GitHub Section -->
+    <section class="github-section fade-in">
+        <h2>Latest Open Source Work</h2>
+        <div class="repo-grid" id="github-repos">
+            <!-- Repos will be injected here by script.js -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Bandhan Hardiya</title>
+    <meta name="description" content="Projects developed by Bandhan Hardiya.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">BH.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html" class="active">Work</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    <main class="page-container fade-in">
+        <h1 class="page-title">My Work</h1>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="sql">SQL / Data</button>
+            <button class="filter-btn" data-filter="excel">Excel</button>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card" data-category="python">
+                <div class="project-img"><img src="assets/inventory.png" alt="Inventory Project"></div>
+                <div class="project-info">
+                    <h3>Inventory Management System</h3>
+                    <p class="tech-stack">Python, MySQL</p>
+                    <p>A system to manage and interact with an inventory database. Allows inserting, updating, and
+                        querying products, categories, suppliers, orders, and customers.</p>
+                    <a href="https://github.com/BandhanHardiya/Inventory_management_sys" class="project-link">View
+                        Source</a>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="sql">
+                <div class="project-img"><img src="assets/data_warehouse.png" alt="Data Warehouse Project"></div>
+                <div class="project-info">
+                    <h3>Data Warehouse</h3>
+                    <p class="tech-stack">SQL Server, Data Modeling</p>
+                    <p>Building a modern data warehouse with ETL processes, data modeling, and analytics to deliver
+                        insights into customer behavior and sales trends.</p>
+                    <a href="https://github.com/BandhanHardiya/sql-data-warehouse-project" class="project-link">View
+                        Source</a>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="sql">
+                <div class="project-img"><img src="assets/pizza_sales.png" alt="Pizza Sales Analysis"></div>
+                <div class="project-info">
+                    <h3>Pizza Sales Analysis</h3>
+                    <p class="tech-stack">SQL, Tableau</p>
+                    <p>Analyzes pizza sales data to derive meaningful insights. Uses SQL for data processing and Tableau
+                        for visualization of KPIs and sales trends.</p>
+                    <a href="https://github.com/BandhanHardiya/Pizza_sale_analysis" class="project-link">View Source</a>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="excel">
+                <div class="project-img"><img src="assets/excel_dashboard.png" alt="Online-Store Dashboard with excel">
+                </div>
+                <div class="project-info">
+                    <h3>Online-Store Dashboard with excel</h3>
+                    <p class="tech-stack">EXCEL, Visualization</p>
+                    <p>Online Store Annual Report Dashboard Project Overview This project is an Online Store Annual
+                        Report Dashboard built using Microsoft Excel.
+                        The dashboard provides a detailed analysis of an online store's performance, visualizing
+                        essential metrics.</p>
+                    <a href="https://github.com/BandhanHardiya/Online-Store-Dashboard-with-excel"
+                        class="project-link">View Source</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
